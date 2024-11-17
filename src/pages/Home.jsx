@@ -197,7 +197,7 @@ const Home = () => {
                             <div class="box">
                                 <img src={values2} class="img-fluid" alt="" />
                                 <h3>Protecting Your Information, Ensuring Privacy.</h3>
-                                <p>We understand the importance of keeping your data secure. Our system employs advanced security .</p>
+                                <p>We understand the importance of keeping your data secure and system employs advanced security .</p>
                             </div>
                         </div>
 
