@@ -8,7 +8,7 @@ import { message } from 'antd';
 
 
 const Sign = () => {
-     const baseUrl = "backend-smoky-three.vercel.app";
+
     const [form] = Form.useForm();
     const navigate = useNavigate();
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -59,7 +59,7 @@ const Sign = () => {
 
     const SignIn = async () => {
         try {
-            const res = await fetch(`${baseUrl}/api/login`, {
+            const res = await fetch(`https://backend-smoky-three.vercel.app/api/login`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
