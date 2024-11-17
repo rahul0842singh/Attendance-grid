@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6e0e70c.css",
+    "main.js": "/static/js/main.34a7394f.js",
+    "static/js/453.9022dc6c.chunk.js": "/static/js/453.9022dc6c.chunk.js",
+    "static/media/emp.jpg": "/static/media/emp.6bb18b1107a11eac4c83.jpg",
+    "static/media/men2.jpg": "/static/media/men2.5f7c7a5a75ebbad43304.jpg",
+    "static/media/sideimg.png": "/static/media/sideimg.4eb9a201f95f4e3512c4.png",
+    "static/media/admin.png": "/static/media/admin.8c08a254bc68d2143efb.png",
+    "static/media/bootstrap-icons.woff?": "/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/women2.jpg": "/static/media/women2.590fc5da8b22e282b597.jpg",
+    "static/media/men1.jpeg": "/static/media/men1.84717192c6d902f50314.jpeg",
+    "static/media/bootstrap-icons.woff2?": "/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/features.png": "/static/media/features.7fbc4dc790395faa5f44.png",
+    "static/media/upi.png": "/static/media/upi.f9a9d71ea3d825e967b9.png",
+    "static/media/logo.png": "/static/media/logo.eb7e3f1bb886795a009d.png",
+    "static/media/features-2.png": "/static/media/features-2.b6716e93f46e618dfb02.png",
+    "static/media/form.jpg": "/static/media/form.de8b15f55a3bec95beac.jpg",
+    "static/media/icici.png": "/static/media/icici.87ca0b6153fafcbf4615.png",
+    "static/media/sbi.png": "/static/media/sbi.56343a5957cc4f5f1255.png",
+    "static/media/women1.jpg": "/static/media/women1.3f66eec9dde31e80a319.jpg",
+    "static/media/values-2.png": "/static/media/values-2.b55a44f9e403dcab6f04.png",
+    "static/media/hero-img.png": "/static/media/hero-img.14dc8f7a4d4b3edb0402.png",
+    "static/media/values-1.png": "/static/media/values-1.006c8f97bfa409ea7f42.png",
+    "static/media/values-3.png": "/static/media/values-3.ecfe7a9ca47c4b3de984.png",
+    "static/media/hdfc.png": "/static/media/hdfc.7dddac55213e1aa5bec0.png",
+    "static/media/footer-bg.png": "/static/media/footer-bg.c2aae576a94b37c65f8f.png",
+    "static/media/pricing-business.png": "/static/media/pricing-business.6bb84a829a0adb27bda9.png",
+    "index.html": "/index.html",
+    "static/media/team-shape.svg": "/static/media/team-shape.1f61b646ef96bc3ea57d.svg",
+    "main.a6e0e70c.css.map": "/static/css/main.a6e0e70c.css.map",
+    "main.34a7394f.js.map": "/static/js/main.34a7394f.js.map",
+    "453.9022dc6c.chunk.js.map": "/static/js/453.9022dc6c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6e0e70c.css",
+    "static/js/main.34a7394f.js"
+  ]
+}
