@@ -8,6 +8,7 @@ import { message } from 'antd';
 
 
 const Sign = () => {
+     const baseUrl = process.env.REACT_APP_API_BASE_URL;
     const [form] = Form.useForm();
     const navigate = useNavigate();
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -58,7 +59,7 @@ const Sign = () => {
 
     const SignIn = async () => {
         try {
-            const res = await fetch('http://localhost:9000/api/login', {
+            const res = await fetch(`${baseUrl}/api/login`, {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
