@@ -69,7 +69,7 @@ const MemberProject = () => {
 
   const handleFormSubmit = async (values) => {
     try {
-      const response = await fetch(`http://localhost:9000/AddEmpProj/${storedProjectId}`, {
+      const response = await fetch(`https://backend-smoky-three.vercel.app/AddEmpProj/${storedProjectId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ const MemberProject = () => {
 
   const HandleSubmitEmp = async (values) => {
     try {
-      const response = await fetch(`http://localhost:9000/AddEmpProj/${projectIdFun}`, {
+      const response = await fetch(`https://backend-smoky-three.vercel.app/AddEmpProj/${projectIdFun}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -157,7 +157,7 @@ const MemberProject = () => {
 
   const handleSave = async (employee_id) => {
     try {
-      const response = await fetch(`http://localhost:9000/updateEmployee/${employee_id}`, {
+      const response = await fetch(`https://backend-smoky-three.vercel.app/updateEmployee/${employee_id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -216,7 +216,7 @@ const MemberProject = () => {
 
   const getEmpInProject = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/getEmpFromProj/${storedProjectId}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getEmpFromProj/${storedProjectId}`);
       setEmpInProj(res.data);
       console.log(res.data);
     } catch (error) {
@@ -226,7 +226,7 @@ const MemberProject = () => {
 
   const ProjectDetailload = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/getProjDet/${storedProjectId}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getProjDet/${storedProjectId}`);
       setProjDet(res.data);
       console.log(projectId, "iiiiiiiiiii");
 
@@ -238,7 +238,7 @@ const MemberProject = () => {
 
   const getCompanyDetail = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/getCompanyDetail/${storedCompanyId}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getCompanyDetail/${storedCompanyId}`);
       setCompanyDetail(res.data);
     } catch (error) {
       console.error('Failed to fetch projects:', error);
@@ -247,7 +247,7 @@ const MemberProject = () => {
 
   const countEmployee = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/countEmp/${storedProjectId}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/countEmp/${storedProjectId}`);
       setCountEmp(res.data);
       console.log(res.data);
     } catch (error) {
@@ -283,7 +283,7 @@ const MemberProject = () => {
       onOk: async () => {
         try {
           // Send DELETE request to the backend
-          const response = await fetch(`http://localhost:9000/deleteEmp/${employee_id}`, {
+          const response = await fetch(`https://backend-smoky-three.vercel.app/deleteEmp/${employee_id}`, {
             method: 'DELETE',
             headers: {
               'Content-Type': 'application/json',
