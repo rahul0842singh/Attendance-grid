@@ -37,7 +37,7 @@ const EmployeeSignin = () => {
     const empsign = async () => {
 
         try {
-            const res = await fetch('http://localhost:9000/api/emplogin', {
+            const res = await fetch('https://backend-smoky-three.vercel.app/api/emplogin', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
