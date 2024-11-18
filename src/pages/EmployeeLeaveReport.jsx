@@ -69,7 +69,7 @@ const EmployeeLeaveReport = () => {
 
   const CurrentDateHour = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/getCurrentHour/${employeeId}`)
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getCurrentHour/${employeeId}`)
       setdataCurrentDateHour(res.data)
     } catch (error) {
       console.log(error);
@@ -96,7 +96,7 @@ const EmployeeLeaveReport = () => {
   const [dataRangeDateHour, setdataRangeDateHour] = useState([])
   const RangeDateHour = async (startDate, endDate) => {
     try {
-      const res = await axios.get(`http://localhost:9000/getWorkingHourRange/${employeeId}/${startDate}/${endDate}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getWorkingHourRange/${employeeId}/${startDate}/${endDate}`);
       setdataRangeDateHour(res.data);
       console.log("ddd", res.data);
 
@@ -128,7 +128,7 @@ const EmployeeLeaveReport = () => {
   const SingleDateHour = async (date) => {
 
     try {
-      const res = await axios.get(`http://localhost:9000/getSingleDayHour/${employeeId}/${date}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/getSingleDayHour/${employeeId}/${date}`);
       setdatasingleDateHour(res.data);
       console.log("date", date);
       console.log("rtrtr", res.data);
@@ -144,7 +144,7 @@ const EmployeeLeaveReport = () => {
 
   const leave_balance = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/leaveBalance/${employeeId}`)
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/leaveBalance/${employeeId}`)
       setleaveBalance(res.data)
       console.log(res.data);
 
@@ -156,7 +156,7 @@ const EmployeeLeaveReport = () => {
   const [leaveApplied, setLeaveApplied] = useState([])
   const leaveAppliedId = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/appliedLeave/${employeeId}`)
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/appliedLeave/${employeeId}`)
       setLeaveApplied(res.data)
       console.log(res.data);
       
@@ -343,7 +343,7 @@ const EmployeeLeaveReport = () => {
 
   const handleApprove = async (leave_Applied_id) => {
     try {
-      await axios.post(`http://localhost:9000/approveLeave/${leave_Applied_id}`);
+      await axios.post(`https://backend-smoky-three.vercel.app/approveLeave/${leave_Applied_id}`);
       message.success('Leave approved successfully');
       fetchLeaveRequests(); // Reload the list
     } catch (error) {
@@ -365,7 +365,7 @@ const EmployeeLeaveReport = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:9000/deleteLeave/${cancelItem.leave_applied_id}`);
+      await axios.delete(`https://backend-smoky-three.vercel.app/deleteLeave/${cancelItem.leave_applied_id}`);
       message.success('Leave canceled successfully');
       setModalVisible(false);
       fetchLeaveRequests(); // Reload the list
@@ -380,7 +380,7 @@ const EmployeeLeaveReport = () => {
 
   const fetchLeaveRequests = async () => {
     try {
-      const res = await axios.get(`http://localhost:9000/appliedLeave/${employeeId}`);
+      const res = await axios.get(`https://backend-smoky-three.vercel.app/appliedLeave/${employeeId}`);
       setList(res.data);
       setInitLoading(false);
     } catch (error) {
