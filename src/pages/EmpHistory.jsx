@@ -34,7 +34,7 @@ const EmpHistory = () => {
 
     const getLeaveHistory = async () => {
         try {
-            const response = await axios.get(`http://localhost:3000/appliedLeave/${employeeId}`);
+            const response = await axios.get(`https://backend-smoky-three.vercel.app/appliedLeave/${employeeId}`);
             const sortedHistory = response.data.sort((a, b) => a.status - b.status); // Sort to show "Not Approved" first
             setLeaveHistory(sortedHistory);
             setDisplayedList(sortedHistory.slice(0, itemsPerPage)); // Show the first 8 items initially
@@ -76,7 +76,7 @@ const EmpHistory = () => {
         if (leaveToCancel) {
             try {
                 
-                await axios.delete(`http://localhost:3000/deleteLeave/${leaveToCancel}`);
+                await axios.delete(`https://backend-smoky-three.vercel.app/deleteLeave/${leaveToCancel}`);
                 console.log(`Leave application with ID ${leaveToCancel} has been cancelled.`); // Log success message
                 // Refresh the leave history after cancellation
                 await getLeaveHistory();
