@@ -44,7 +44,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:9000/registerCompany', formData, {
+            const response = await axios.post('https://backend-smoky-three.vercel.app/registerCompany', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
