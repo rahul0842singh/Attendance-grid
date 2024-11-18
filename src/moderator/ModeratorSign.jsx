@@ -38,7 +38,7 @@ const ModeratorSign = () => {
 
     const SignIn = async () => {
         try {
-            const res = await fetch('http://localhost:9000/api/loginadmin', {
+            const res = await fetch('https://backend-smoky-three.vercel.app/api/loginadmin', {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json'
