@@ -61,7 +61,7 @@ const EmpDashboard = () => {
     const getProjectDetails = async () => {
         try {
             const projectId = userDetails[0]?.emp_id_project || 'no'; // Safely get emp_id_project
-            const response = await axios.get(`http://localhost:3000/getProjDet/${projectId}`);
+            const response = await axios.get(`https://backend-smoky-three.vercel.app/getProjDet/${projectId}`);
             setprojectDetails(response.data);
 
         } catch (error) {
@@ -84,7 +84,7 @@ const EmpDashboard = () => {
     const getLeaveBalance = async () => {
         try {
 
-            const response = await axios.get(`http://localhost:3000/leaveBalance/${employeeId}`);
+            const response = await axios.get(`https://backend-smoky-three.vercel.app/leaveBalance/${employeeId}`);
             setleaveBalance(response.data);
 
         } catch (error) {
@@ -163,7 +163,7 @@ const EmpDashboard = () => {
         console.log("FormData Object:", formData);
 
         try {
-            const response = await axios.post('http://localhost:3000/apply-leave', formData, {
+            const response = await axios.post('https://backend-smoky-three.vercel.app/apply-leave', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -254,7 +254,7 @@ const EmpDashboard = () => {
             }
 
             try {
-                const response = await fetch(`http://localhost:9000/getDetailsOfemp/${employeeId}`, {
+                const response = await fetch(`https://backend-smoky-three.vercel.app/getDetailsOfemp/${employeeId}`, {
                     method: 'GET',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`, // Assuming JWT is used for authorization
@@ -295,7 +295,7 @@ const EmpDashboard = () => {
 
     useEffect(() => {
         if (employeeId) {
-            axios.get(`http://localhost:3000/appliedLeave/${employeeId}`)
+            axios.get(`https://backend-smoky-three.vercel.app/appliedLeave/${employeeId}`)
                 .then((response) => {
                     setLeaveData(response.data);
                     console.log('Leave Data:', response.data); // Log leave data
