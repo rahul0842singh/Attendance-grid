@@ -87,7 +87,7 @@ const Timesheet = () => {
         const isBeforeToday = date.isBefore(dayjs(), 'day'); // Check if the date is before today
 
         try {
-            const response = await fetch(`http://localhost:9000/getInfoTimesheet/${formattedDate}/${employee_id}`);
+            const response = await fetch(`https://backend-smoky-three.vercel.app/getInfoTimesheet/${formattedDate}/${employee_id}`);
             const data = await response.json();  
 
             if (data && data.length > 0) {
@@ -140,7 +140,7 @@ const Timesheet = () => {
     const onFinish = async (values) => {
         try {
             const { signin, signout, work_detail } = values;
-            const response = await fetch(`http://localhost:9000/getTimesheet/${employeeId}`, {
+            const response = await fetch(`https://backend-smoky-three.vercel.app/getTimesheet/${employeeId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
