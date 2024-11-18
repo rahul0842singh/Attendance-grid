@@ -89,7 +89,7 @@ const Checkout = () => {
             console.log('Payment Data:', paymentData); // Check all data before sending
         
             // Create order on the server
-            const orderResponse = await axios.post('http://localhost:3000/create-order', {
+            const orderResponse = await axios.post('https://backend-smoky-three.vercel.app/create-order', {
                 amount: paymentData.amount, // Send the amount from form
                 currency: paymentData.currency,
                 receipt: paymentData.receipt, 
@@ -120,7 +120,7 @@ const Checkout = () => {
     
                         // Send payment details for verification
                         const verificationResponse = await axios.post(
-                            'http://localhost:3000/verify-payment',
+                            'https://backend-smoky-three.vercel.app/verify-payment',
                             paymentResponseData
                         );
                         
