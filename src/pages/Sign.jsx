@@ -89,7 +89,7 @@ const Sign = () => {
 
     const sendOtp = async () => {
         try {
-            const res = await fetch('http://localhost:9000/send-otp', {
+            const res = await fetch(`https://backend-smoky-three.vercel.app/send-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ const Sign = () => {
 
     const verifyOtp = async () => {
         try {
-            const res = await fetch('http://localhost:9000/verify-otp', {
+            const res = await fetch(`https://backend-smoky-three.vercel.app/verify-otp`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -146,7 +146,7 @@ const Sign = () => {
 
     const SetNewPassword = async () => {
         try {
-            const res = await fetch(`http://localhost:9000/update-password`, {
+            const res = await fetch(`https://backend-smoky-three.vercel.app/update-password`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
