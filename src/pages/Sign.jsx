@@ -295,6 +295,12 @@ const Sign = () => {
                                     <a onClick={() => { showForgotPasswordModal() }} className="text-body forgot-link">Forgot password?</a>
                                     <a href="/register" className="text-body register-link">Register?</a>
                                 </div>
+
+                                 <div className="alert alert-info mt-3" role="alert">
+                                    <strong>Email:</strong> kumar_rahulkkcs@yahoo.com<br />
+                                    <strong>Password:</strong> Kashmir<br/>
+                                    <strong>Link for Employee Login:</strong> <Link to="/empsignin"> Login Page</Link>
+                                </div>
                             </Form>
                         </div>
                     </div>
